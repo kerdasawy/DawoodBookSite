@@ -1,0 +1,37 @@
+<div class="container"  dir="rtl"  >
+  
+  <div  class="row" *ngIf="dataLoaded">
+    <div class="container">
+      <div class="row">
+        <div class="col-12">
+          <form>
+
+
+            <input type="radio" name="mode-to-show"  (change)="onSearch(service.searchtext)"  value="All" [(ngModel)] ="service.searchType"  >الكل
+            <input type="radio" name="mode-to-show"   (change)="onSearch(service.searchtext)"  value="Title" [(ngModel)] ="service.searchType"   >العنوان
+            
+
+
+
+            <input type="text" [(ngModel)] ="service.searchtext" (input)="onSearch($event.target.value)" name="filter-items">
+          </form>
+          </div>
+        </div>
+    
+        <div class="item-title-container  row" *ngIf="showMode==='Title' ||showMode  ==='All'">
+
+          <div class="col-lg-4 col-sm-12 p-2" *ngFor=" let item  of  items">
+
+            <span class="item-title  "><a  routerLink="/item/{{item.ID}}">{{item.Name+'  '}}</a></span>
+
+
+          </div>
+        </div>
+
+        
+      </div>
+    </div>
+  <div  class="row" *ngIf="!dataLoaded">
+    <h1>أنتظر تحميل البيانات..</h1>
+  </div>
+</div>

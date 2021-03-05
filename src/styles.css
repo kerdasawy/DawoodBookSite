@@ -1,0 +1,31 @@
+/* You can add global styles to this file, and also import other style files */
+
+.float-right {
+  direction: rtl !important;
+  float: right !important;
+  text-align: right;
+ 
+}
+.backgroundItem {
+  background-image: linear-gradient(to left top, #36cde3, #2fcae4, #29c8e4, #22c5e5, #1bc2e5);
+  border-image-slice: 42 42 42  42;
+  border-image-width: 42px 42px 0px 42px;
+  border-image-outset: 0px 0px 0px 0px;
+  border-image-repeat: round round;
+  border-style: solid;
+  border-image-source: url('/assets/img/border-image-6.svg');
+  display: block;
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 0;
+}
+a  {
+  color: #dc1d30!important;
+}
+h1, h2, h3, h4 {
+color:darkblue;
+font-weight:600;
+}

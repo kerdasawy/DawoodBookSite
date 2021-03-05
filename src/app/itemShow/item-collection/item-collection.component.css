@@ -1,0 +1,47 @@
+.item-title {
+  box-shadow: 0px 0px 2px 1px rgba(232,170,44,0.53);
+  -webkit-box-shadow: 0px 0px 2px 1px rgba(232,170,44,0.53);
+  -moz-box-shadow: 0px 0px 2px 1px rgba(232,170,44,0.53);
+  margin: 10px;
+  padding: 3px;
+  line-height: 20px;
+  word-break: keep-all;
+  white-space: normal;
+}
+.item-title :hover{
+  box-shadow: 0px 0px 2px 1px rgba(227,42,16,0.53);
+  -webkit-box-shadow: 0px 0px 2px 1px rgba(227,42,16,0.53);
+  -moz-box-shadow: 0px 0px 2px 1px rgba(227,42,16,0.53);
+}
+
+p {
+  line-height: 35px;
+  word-wrap: break-word;
+  font-size: larger;
+}
+.hot {
+  color: red;
+  font-style: italic;
+  border-bottom: 2px double black;
+  margin: .5em;
+  font-weight: 900;
+}
+
+.cold {
+  color: deepskyblue;
+  font-style: italic;
+  border-bottom: 2px double black;
+  margin: .5em;
+  font-weight: 900;
+}
+
+.normal {
+  color: gray;
+  font-style: italic;
+  border-bottom: 2px double black;
+  margin: .5em;
+  font-weight: 900;
+}
+mark {
+  background-color: darkorange;
+}
